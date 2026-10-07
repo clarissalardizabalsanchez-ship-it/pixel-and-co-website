@@ -242,6 +242,36 @@
       display: flex;
       justify-content: space-between;
     }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .person {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+    }
+    .avatar-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover; /* Forces image to fit the box without stretching */
+      border-radius: 12px; /* Gives it smooth rounded corners */
+      margin: 0 auto 15px auto;
+      display: block;
+      background-color: #eee;
+    }
+    .person b {
+      display: block;
+      font-size: 1.1rem;
+    }
+    .person span {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
     @media(max-width: 800px) {
       .grid {
         grid-template-columns: 1fr;
@@ -407,31 +437,37 @@
       <h2>The people behind it.</h2>
       <p class="sub">Student creatives combining communication, design, storytelling, and production skills.</p>
       <div class="team">
+        
         <div class="person">
-          <div class="avatar">MK</div>
+          <img class="avatar-img" src="mary.jfif" alt="Mary Kassel Joy C. Alere">
           <b>Alere, Mary Kassel Joy C.</b>
           <span>Creative Team</span>
         </div>
+        
         <div class="person">
-          <div class="avatar">SM</div>
+          <img class="avatar-img" src="sheena.jfif" alt="Sheena Marie Cases">
           <b>Cases, Sheena Marie</b>
           <span>Creative Team</span>
         </div>
+        
         <div class="person">
-          <div class="avatar">N</div>
+          <img class="avatar-img" src="novy.jfif" alt="Novy Lariosa">
           <b>Lariosa, Novy</b>
           <span>Creative Team</span>
         </div>
+        
         <div class="person">
-          <div class="avatar">CM</div>
+          <img class="avatar-img" src="mumar.jfif" alt="Christine Mae Mumar">
           <b>Mumar, Christine Mae</b>
           <span>Creative Team</span>
         </div>
+        
         <div class="person">
-          <div class="avatar">CL</div>
+          <img class="avatar-img" src="reese.jfif" alt="Clarisse L. Sanchez">
           <b>Sanchez, Clarisse L.</b>
-          <span>Creative Team</span>
+          <span>Team Lead</span>
         </div>
+        
       </div>
     </div>
   </section>
