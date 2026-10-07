@@ -11,8 +11,8 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fffaf8;
-      color: #222;
+      background: #faf7f2; /* Beige background from logo */
+      color: #232323; /* Dark charcoal from logo text */
     }
     a {
       text-decoration: none;
@@ -26,24 +26,24 @@
     nav {
       position: sticky;
       top: 0;
-      background: #fffaf8ee;
+      background: #faf7f2ee;
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #eaddd3;
       z-index: 5;
     }
     .nav {
-      height: 70px;
+      height: 75px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
     .logo {
-      font-size: 25px;
-      font-weight: 900;
+      display: flex;
+      align-items: center;
     }
-    .logo i {
-      color: #7658d7;
-      font-style: normal;
+    .logo img {
+      height: 60px;
+      mix-blend-mode: multiply; /* Helps the logo blend smoothly into the background */
     }
     .links {
       display: flex;
@@ -55,7 +55,7 @@
       display: inline-block;
       padding: 13px 19px;
       border-radius: 30px;
-      background: #7658d7;
+      background: #9c7a5b; /* Brown accent from logo */
       color: #fff;
       font-weight: 800;
       border: 0;
@@ -76,11 +76,11 @@
       margin: 15px 0 25px;
     }
     h1 em {
-      color: #7658d7;
+      color: #9c7a5b;
       font-style: normal;
     }
     .eyebrow {
-      color: #7658d7;
+      color: #9c7a5b;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 900;
@@ -103,9 +103,9 @@
       margin-top: 25px;
     }
     .outline {
-      background: white;
-      color: #222;
-      border: 1px solid #222;
+      background: transparent;
+      color: #232323;
+      border: 1px solid #232323;
     }
     section {
       padding: 70px 0;
@@ -127,7 +127,7 @@
     }
     .card, .price, .person {
       background: #fff;
-      border: 1px solid #ece8e5;
+      border: 1px solid #eaddd3;
       border-radius: 23px;
       padding: 25px;
     }
@@ -138,7 +138,7 @@
       font-size: 30px;
     }
     .num {
-      color: #7658d7;
+      color: #9c7a5b;
       font-size: 12px;
       font-weight: 900;
     }
@@ -155,7 +155,7 @@
     }
     .work {
       margin: 0;
-      border: 1px solid #ece8e5;
+      border: 1px solid #eaddd3;
       border-radius: 22px;
       overflow: hidden;
       background: #fff;
@@ -186,7 +186,7 @@
       margin: 10px 0;
     }
     .featured {
-      background: #efeaff;
+      background: #f0e9e1; /* Light beige accent */
     }
     .team {
       grid-template-columns: repeat(5, 1fr);
@@ -195,12 +195,12 @@
     .avatar {
       height: 110px;
       border-radius: 15px;
-      background: linear-gradient(135deg, #e7defd, #f7d6e5);
+      background: linear-gradient(135deg, #e8dfd5, #dbcdba);
       display: grid;
       place-items: center;
       font-size: 30px;
       font-weight: 900;
-      color: #7658d7;
+      color: #9c7a5b;
       margin-bottom: 13px;
     }
     .person b {
@@ -208,7 +208,7 @@
       display: block;
     }
     .inquire {
-      background: #222;
+      background: #232323; /* Dark charcoal from logo */
       color: #fff;
       border-radius: 30px;
       padding: 42px;
@@ -225,7 +225,7 @@
       padding: 14px;
       border-radius: 13px;
       border: 1px solid #444;
-      background: #2c2c34;
+      background: #333333;
       color: #fff;
       font: inherit;
     }
@@ -275,7 +275,9 @@
 <body>
   <nav>
     <div class="wrap nav">
-      <a class="logo" href="#">pixel <i>&</i> co.</a>
+      <a class="logo" href="#">
+        <img src="d315ea6f-ee86-43c1-a4dc-4d27d1c1deea.jfif" alt="Pixel & Co.">
+      </a>
       <div class="links">
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
@@ -435,7 +437,7 @@
   <section id="inquire">
     <div class="wrap">
       <div class="inquire">
-        <div class="eyebrow" style="color:#cbbdff">Let's create.</div>
+        <div class="eyebrow" style="color:#dbcdba">Let's create.</div>
         <h2>Have an idea?<br>Let's frame it.</h2>
         <p class="sub">Tell us what you need and we'll help shape it into a clear, creative output.</p>
         <form class="form" action="mailto:pixelandco.creative@gmail.com" method="post" enctype="text/plain">
